@@ -1,0 +1,105 @@
+:root {
+    --accent: #0D0D0D
+}
+
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    /* user-select: none; */
+    /* border: 1px solid; */
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: grid;
+    grid: auto 1fr / auto;
+    font-size: 62.5%;
+    padding: 3rem;
+    background-color: var(--accent);
+}
+
+main {
+    display: grid;
+    grid-template: auto / 60% 1fr;
+}
+
+#output,
+#options {
+    background-color: white;
+}
+
+#output {
+    display: grid;
+    place-items: center;
+}
+
+#options {
+    padding: 2rem 2.5rem 2rem 0;
+}
+
+#options > form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.control-group {
+    font-size: 1rem;
+    padding: 1rem 1.5rem;
+    position: relative;
+    border: 1px solid var(--accent);
+}
+
+.control-group > span {
+    position: absolute;
+    left: 0.5rem;
+    top: -0.7rem;
+    padding: 0.1rem 0.3rem;
+    background-color: white;
+}
+
+#dimensions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+input[type='number'] {
+    border: 1px solid var(--accent);
+    text-align: center;
+}
+
+#pattern-size {
+    display: grid;
+    grid-template: auto / auto 1fr auto;
+    gap: 1rem;
+}
+
+#predefined-palletes {
+    flex: 1 1 auto;
+}
+
+#custom-pallete {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+#custom-pallete > div {
+    font-size: .8rem;
+    font-family: monospace;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .2rem;
+}

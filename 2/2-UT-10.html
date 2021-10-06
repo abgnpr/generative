@@ -1,0 +1,101 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Uniform Tiling</title>
+  <link rel="stylesheet" href="2-UT-10.css">
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="2-UT-10 index.js"></script>
+  <script defer src=2-UT-10.js></script>
+</head>
+
+<body>
+
+  <h1>Team 1 of B2, Ignite-28</h1>
+  <main>
+
+    <div id="output"></div>
+
+    <section id="options">
+
+      <form>
+        
+        <div id="dimensions" class="control-group">
+          <span>Floor dimension</span>
+          <div>
+            <label for="height">Height: </label>
+            <input type="number" id="height" min="90" max="1000" value="400" step="1" onchange="draw2()">
+          </div>
+          <p>×</p>
+          <div>
+            <label for="width">Width: </label>
+            <input type="number" id="width" min="90" max="1000" value="647" step="1" onchange="draw2()">
+          </div>
+        </div>
+
+        <div id="pattern-size" class="control-group">
+          <span>Pattern Size</span>
+          <p>5</p>
+          <input type="range" id="radius" min="5" max="100" value="20" step="1" onchange="draw2()">
+          <p>100</p>
+        </div>
+
+        <div id="predefined-palletes" class="control-group">
+          <span>Predefined Colors</span>
+        </div>
+
+        <div id="custom-pallete" class="control-group">
+          <span>Custom Colors</span>
+          <div>
+            <input type="color" name="color" id="color" value="#ffffff">
+            <p>white</p>
+          </div>
+          <div>
+            <input type="color" name="color1" id="color"  value="#ffffff">
+            <p>white</p>
+          </div>
+          <div>
+            <input type="color" name="color2" id="color2"  value="#ffffff">
+            <p>white</p>
+          </div>
+          <div>
+            <input type="color" name="color3" id="color3"  value="#ffffff">
+            <p>white</p>
+          </div>
+        </div>
+        
+        <!-- <div>
+          <label for="checkbox">Do you want to color it</label>
+          <input type="checkbox" id="checkbox" onclick="draw2()">
+        </div> -->
+      </form>
+
+    </section>
+
+  </main>
+
+
+  <!-- <h2>Enter the dimentions of the floor</h2> -->
+
+  <!-- <div style="margin-top:20px">Size Of The Tile
+      <input style="background-color:cyan; width:100px;height:20px" type="range" id="radius" min="5" max="100"
+        value="20" step="1" onchange="draw2()">
+    </div>
+
+    <div><input type="checkbox" id="button" onclick="draw2()"> Do you want to color it</div>
+
+    <div style="margin-top:20px">Height
+      <input style="background-color: cyan; width:100px;height:20px" type="number" id="height" min="90" max="1000" value="263" step="1" onchange="draw2()">
+    </div>
+
+    <div style="margin-top:20px">Width
+      <input style="background-color: cyan; width:100px;height:20px" type="number" id="width" min="90" max="1000"
+        value="150" step="1" onchange="draw2()">
+    </div>
+
+     -->
+
+
+</body>
+
+</html>
