@@ -16,8 +16,8 @@ $(document).ready(function () {
 });
 
 document.getElementById('custom-pallete').addEventListener('change', e => {
-    colors[e.target.name] = e.target.value;
     e.target.nextSibling.nextSibling.innerText = e.target.value;
+    colors[e.target.name] = e.target.value;
     draw2();
 });
 
