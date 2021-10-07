@@ -195,7 +195,7 @@ const pattern = async function (w, h, r, colors) {
     // Calling function
     draw2(w, h);
     //Returning Generated Pattern
-    const tempImg = new Image();
-    tempImg.src = canvas.toDataURL();
-    return tempImg;
+    // const tempImg = new Image();
+    // tempImg.src = canvas.toDataURL();
+    return canvas;
 };

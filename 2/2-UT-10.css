@@ -23,6 +23,11 @@ body {
     background-color: var(--accent);
 }
 
+h1 {
+    color: white;
+    margin-bottom: .5rem;
+}
+
 main {
     display: grid;
     grid-template: auto / 60% 1fr;
@@ -84,6 +89,28 @@ input[type='number'] {
 
 #predefined-palletes {
     flex: 1 1 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    gap: 5%;
+}
+
+.pallete {
+    width: 45%;
+    height: 17%;
+    /* border: 1px solid; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.pallete:hover {
+    transform: scale(1.05);
+}
+
+.pallete:active {
+    transform: scale(1);
 }
 
 #custom-pallete {
